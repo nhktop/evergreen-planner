@@ -185,3 +185,65 @@ body:not(.dark) .ref-panel .text-button{color:#277849}
 #forestPopover{position:absolute!important;right:0!important;bottom:122px!important;width:320px!important;max-width:calc(100vw - 36px)!important;z-index:10000!important;pointer-events:auto!important}
 @media(max-width:900px){#forestAssistant{right:20px!important;bottom:20px!important;width:94px!important;height:94px!important}#forestOrb.forest-orb{width:90px!important;height:90px!important;min-width:90px!important;min-height:90px!important}#forestOrb .orb-core{inset:20px!important}#forestPopover{bottom:108px!important}}
 @media(max-width:560px){#forestAssistant{right:15px!important;bottom:15px!important;width:84px!important;height:84px!important}#forestOrb.forest-orb{width:80px!important;height:80px!important;min-width:80px!important;min-height:80px!important}#forestOrb .orb-core{inset:18px!important}#forestPopover{bottom:96px!important}}
+
+/* Larger, more readable Evergreen workspace */
+body{font-size:15px}
+.sidebar{width:190px;padding:20px 13px 13px}
+.brand{font-size:16px;padding-bottom:30px}
+.brand-mark{width:29px;height:29px;min-width:29px}
+.nav-link{font-size:13px;padding:11px 10px;gap:11px}
+.nav-link span{font-size:16px;width:17px}
+.side-quote{padding:12px;margin-bottom:12px}
+.side-quote p{font-size:12px}.side-quote small{font-size:10px}
+.profile strong{font-size:12px}.profile small{font-size:10px}
+.main-area{margin-left:190px}
+.topbar{height:44px;padding:0 28px}
+.breadcrumb{font-size:11px}.live-clock{font-size:10px}
+.page-content{padding:27px 30px 42px;max-width:1700px}
+.page-heading h1{font-size:21px}.page-heading p{font-size:12px}
+.button{font-size:12px;padding:9px 13px}
+.ref-welcome{min-height:68px;margin-bottom:17px}.ref-welcome h1{font-size:20px}.ref-welcome p{font-size:11px}
+.ref-hero{height:112px;min-height:112px;padding:16px 20px;margin-bottom:14px}
+.ref-hero h2{font-size:15px}.ref-hero p{font-size:10px}.ref-hero .quick-actions .button{font-size:9px;padding:6px 10px}
+.ref-star{font-size:90px}.ref-date strong{font-size:13px}.ref-date span,.ref-date small{font-size:9px}
+.ref-stats{gap:11px;margin-bottom:14px}.ref-stat{height:88px;min-height:88px;padding:11px 13px}
+.ref-stat .stat-top{font-size:9px}.ref-stat .stat-value{font-size:19px}.ref-stat .stat-note{font-size:8px;max-width:145px}
+.stat-visual{width:88px;height:44px}.gauge-visual{width:78px;height:42px}.wave-visual{width:95px;height:42px}
+.ref-dashboard-grid{gap:12px}.ref-panel{padding:13px 14px;margin-bottom:12px;min-height:104px}
+.ref-panel .panel-heading h3{font-size:11px}.ref-panel .panel-heading p{font-size:8px}.ref-panel .text-button{font-size:8px}
+.ref-panel .row-main strong{font-size:9px}.ref-panel .row-main small,.ref-panel .due-label{font-size:8px}
+.ref-panel .list-empty{font-size:9px;padding:16px 5px}.ref-week{min-height:154px}.ref-week .bar-chart{height:95px}.ref-week .bar-group small{font-size:8px}
+.timetable-grid{grid-template-columns:58px repeat(7,minmax(125px,1fr))}
+.timetable-grid>div{min-height:64px;padding:7px}.timetable-grid .week-label{font-size:10px}.timetable-grid .week-time{font-size:9px}
+.timetable-block{font-size:9px;min-height:42px;padding:7px}
+.panel{padding:16px}.panel-heading h3{font-size:13px}.panel-heading p{font-size:10px}
+.table-head,.table-line{font-size:11px}.settings-section h3{font-size:16px}.settings-row{padding:14px 0}
+.integration-card{padding:20px}.integration-card h3{font-size:16px}.integration-card p{font-size:12px;line-height:1.65}.integration-card small{font-size:10px}
+.connection-intro{display:flex;align-items:flex-start;gap:17px;margin-bottom:16px;padding:20px 22px;background:linear-gradient(120deg,rgba(7,74,46,.8),rgba(2,29,19,.94));border:1px solid rgba(102,255,177,.38)}
+.connection-intro-icon{display:grid;place-items:center;flex:0 0 48px;height:48px;border-radius:14px;background:#0c5738;color:#a6ffd0;font-size:25px;box-shadow:0 0 18px #43ffa533}
+.connection-intro h2{font-size:17px;margin:0 0 6px;color:#e6fff0}
+.connection-intro p{font-size:12px;line-height:1.55;color:#b6d9c3;margin:0 0 8px}
+.connection-note{font-size:10px;color:#9affc4}
+.connection-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.connection-card{padding:19px;min-height:220px;display:flex;flex-direction:column}
+.connection-card .integration-card-head{gap:12px;margin-bottom:13px}
+.connection-title{flex:1;min-width:0}.connection-title h3{margin:0 0 4px}
+.connection-card p{flex:1;margin:0 0 17px}.connection-card .button{align-self:flex-start}
+.integration-logo{width:43px;height:43px;min-width:43px;border-radius:12px;font-size:20px}
+.google-mark{background:#132f24;color:#8dffba;font-weight:800}.outlook-mark{background:#123a4d;color:#8edcff;font-weight:800}.apple-mark{background:#26352c;color:#eafff0}
+.badge-status{font-size:9px;padding:5px 8px;border-radius:20px;white-space:nowrap;background:#183d2b;color:#baffd1;border:1px solid #4b9d6d66}
+.status-setup{background:#3b3218;color:#ffe4a1;border-color:#ad8c3c66}.status-local{background:#183d2b;color:#baffd1}
+.connection-security{margin-top:15px;border-color:#b38d3f66;background:rgba(39,32,14,.38)}
+.connection-security strong{font-size:12px;color:#ffe7ae}
+.connection-security p{font-size:11px;line-height:1.65;color:#d4c7a0;margin:7px 0 0}
+.learning-links{margin-top:15px}
+.learning-link-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid #80ffc01b}
+.learning-link-row strong{display:block;font-size:12px}.learning-link-row small{font-size:10px;color:#9abca6}
+body:not(.dark) .connection-intro{background:linear-gradient(120deg,#e0f6e6,#f5fff7);border-color:#b5d9bd}
+body:not(.dark) .connection-intro h2{color:#214c31}body:not(.dark) .connection-intro p{color:#54735d}body:not(.dark) .connection-note{color:#26734a}
+body:not(.dark) .connection-security{background:#fff9e9;border-color:#ead7a1}
+body:not(.dark) .connection-security strong{color:#755a19}body:not(.dark) .connection-security p{color:#806d3c}
+body:not(.dark) .badge-status{background:#e6f5e9;color:#2e7549;border-color:#b6d8be}
+body:not(.dark) .status-setup{background:#fff5d9;color:#84661d;border-color:#ead59a}
+@media(max-width:900px){.sidebar{width:190px}.main-area{margin-left:0}.page-content{padding:20px 16px}.connection-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.page-content{padding:16px 12px}.connection-grid{grid-template-columns:1fr}.connection-intro{padding:15px}.connection-card{min-height:0}.ref-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
