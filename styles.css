@@ -822,3 +822,21 @@ body .modal-backdrop>.focus-modal .timer-ring small{color:#c0a7df!important}
 
 /* Clearly visible homework/task cancellation control */
 .cancel-item-btn{border:1px solid rgba(180,110,130,.55)!important;background:rgba(180,90,120,.12)!important;color:#d98ca8!important;border-radius:7px!important;padding:6px 9px!important;font-size:10px!important;font-weight:700!important;white-space:nowrap}.cancel-item-btn:hover{background:rgba(180,90,120,.24)!important;color:#ffd4e1!important}
+
+
+/* v23 — clear colour identity for homework, tasks and calendar activities */
+.item-color-green{--item-accent:#55e6a0;--item-bg:rgba(35,151,99,.16);--item-border:rgba(85,230,160,.48)}
+.item-color-blue{--item-accent:#76b7ff;--item-bg:rgba(54,119,208,.18);--item-border:rgba(118,183,255,.52)}
+.item-color-purple{--item-accent:#c49aff;--item-bg:rgba(143,91,211,.18);--item-border:rgba(196,154,255,.5)}
+.item-color-orange{--item-accent:#ffbd78;--item-bg:rgba(205,123,48,.17);--item-border:rgba(255,189,120,.5)}
+.item-color-pink{--item-accent:#ff9ecb;--item-bg:rgba(204,83,145,.17);--item-border:rgba(255,158,203,.5)}
+.item-color-teal{--item-accent:#69e2df;--item-bg:rgba(40,160,157,.17);--item-border:rgba(105,226,223,.5)}
+.table-line[class*="item-color-"],.task-row[class*="item-color-"],.homework-row[class*="item-color-"]{border-left:3px solid var(--item-accent)!important;background:linear-gradient(90deg,var(--item-bg),rgba(25,16,39,.18))!important}
+.table-line[class*="item-color-"] .table-title strong,.task-row[class*="item-color-"] .row-main strong,.homework-row[class*="item-color-"] .row-main strong{color:var(--item-accent)!important}
+.table-line[class*="item-color-"] .circle-check,.task-row[class*="item-color-"] .circle-check{border-color:var(--item-border)!important}
+.calendar-event.color-green,.timetable-block.color-green{background:linear-gradient(110deg,#205c43,#173c30)!important;color:#d8ffeb!important;border-color:#55e6a077!important}
+.calendar-event.color-blue,.timetable-block.color-blue{background:linear-gradient(110deg,#294f82,#1b3458)!important;color:#e0efff!important;border-color:#76b7ff88!important}
+.calendar-event.color-purple,.timetable-block.color-purple{background:linear-gradient(110deg,#553578,#38224f)!important;color:#f2e7ff!important;border-color:#c49aff77!important}
+.calendar-event.color-orange,.timetable-block.color-orange{background:linear-gradient(110deg,#68452f,#443024)!important;color:#ffe3c6!important;border-color:#ffbd7877!important}
+.calendar-event.color-pink,.timetable-block.color-pink{background:linear-gradient(110deg,#713653,#48243a)!important;color:#ffe5f1!important;border-color:#ff9ecb77!important}
+.calendar-event.color-teal,.timetable-block.color-teal{background:linear-gradient(110deg,#205957,#173b3b)!important;color:#d9fffc!important;border-color:#69e2df77!important}
