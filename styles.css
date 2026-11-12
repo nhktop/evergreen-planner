@@ -247,3 +247,97 @@ body:not(.dark) .badge-status{background:#e6f5e9;color:#2e7549;border-color:#b6d
 body:not(.dark) .status-setup{background:#fff5d9;color:#84661d;border-color:#ead59a}
 @media(max-width:900px){.sidebar{width:190px}.main-area{margin-left:0}.page-content{padding:20px 16px}.connection-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.page-content{padding:16px 12px}.connection-grid{grid-template-columns:1fr}.connection-intro{padding:15px}.connection-card{min-height:0}.ref-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* v10: prominent left navigation and roomier desktop workspace */
+.sidebar{
+  width:224px!important;
+  padding:22px 14px 14px!important;
+  overflow-y:auto!important;
+  overflow-x:hidden!important;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(102,255,177,.25) transparent;
+}
+.sidebar .brand{padding-bottom:30px!important;font-size:18px!important}
+.sidebar #navigation{
+  display:flex!important;
+  flex-direction:column!important;
+  gap:4px!important;
+  flex:0 0 auto!important;
+  min-height:min-content!important;
+  overflow:visible!important;
+}
+.sidebar #navigation .nav-link{
+  width:100%!important;
+  min-height:43px!important;
+  padding:11px 12px!important;
+  font-size:13px!important;
+  gap:12px!important;
+  border-radius:9px!important;
+}
+.sidebar #navigation .nav-link span{font-size:17px!important;width:19px!important}
+.sidebar #navigation .nav-link[data-page="connections"]{
+  margin:5px 0 9px!important;
+  min-height:46px!important;
+  color:#baffd5!important;
+  background:linear-gradient(100deg,rgba(31,196,119,.23),rgba(10,83,53,.35))!important;
+  border:1px solid rgba(91,255,171,.42)!important;
+  box-shadow:inset 0 0 0 1px rgba(76,248,176,.08),0 0 18px rgba(33,245,162,.12)!important;
+  font-weight:750!important;
+}
+.sidebar #navigation .nav-link[data-page="connections"] span{color:#8dffc0!important}
+.sidebar .sidebar-bottom{flex:0 0 auto;margin-top:auto!important;padding-top:16px}
+.main-area{margin-left:224px!important}
+.topbar{height:54px!important;padding-left:34px!important;padding-right:34px!important}
+.page-content{width:100%!important;max-width:1800px!important;padding:34px 38px 54px!important}
+.page-heading{margin-bottom:30px!important}
+.page-heading h1{font-size:28px!important}
+.page-heading p{font-size:13px!important}
+body{font-size:15px!important}
+.button{font-size:13px!important;padding:11px 16px!important}
+.panel{padding:20px 22px!important}
+.panel-heading h3{font-size:15px!important}
+.panel-heading p{font-size:11px!important}
+.stat-card{padding:19px 20px!important}
+.stat-top{font-size:12px!important}
+.stat-value{font-size:27px!important}
+.stat-note{font-size:11px!important}
+.ref-welcome h1{font-size:23px!important}
+.ref-welcome p{font-size:12px!important}
+.ref-hero{min-height:130px!important;padding:20px 24px!important}
+.ref-hero h2{font-size:17px!important}
+.ref-hero p{font-size:11px!important}
+.ref-stat{height:100px!important;min-height:100px!important;padding:14px 16px!important}
+.ref-stat .stat-value{font-size:22px!important}
+.ref-stat .stat-note{font-size:9px!important}
+.ref-panel{min-height:118px!important;padding:16px 18px!important}
+.ref-panel .panel-heading h3{font-size:13px!important}
+.ref-panel .panel-heading p{font-size:9px!important}
+.ref-panel .row-main strong{font-size:11px!important}
+.ref-panel .row-main small,.ref-panel .due-label{font-size:9px!important}
+.timetable-grid{grid-template-columns:68px repeat(7,minmax(145px,1fr))!important;min-width:1100px!important}
+.timetable-grid>div{min-height:78px!important;padding:9px!important}
+.timetable-block{font-size:10px!important;min-height:48px!important;padding:9px!important}
+.connection-grid{gap:18px!important}
+.connection-card{min-height:245px!important;padding:23px!important}
+.connection-card h3{font-size:18px!important}
+.connection-card p{font-size:13px!important;line-height:1.7!important}
+.connection-intro{padding:24px 26px!important}
+.connection-intro h2{font-size:19px!important}
+.connection-intro p{font-size:13px!important}
+@media(max-width:1100px){
+ .sidebar{width:210px!important}
+ .main-area{margin-left:210px!important}
+ .page-content{padding:27px 24px 42px!important}
+}
+@media(max-width:900px){
+ .sidebar{width:224px!important;transform:translateX(-100%)}
+ .sidebar.open{transform:translateX(0)}
+ .main-area{margin-left:0!important}
+ .topbar{height:58px!important;padding:0 18px!important}
+ .page-content{padding:24px 18px 42px!important}
+}
+@media(max-width:560px){
+ .page-content{padding:18px 13px 35px!important}
+ .page-heading h1{font-size:23px!important}
+ .connection-card{min-height:0!important}
+}
