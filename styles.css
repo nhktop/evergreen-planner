@@ -873,3 +873,6 @@ body .main-area .page-content .table-line{grid-template-columns:minmax(150px,2fr
 .hour-event.color-teal{background:linear-gradient(110deg,#205957,#173b3b)!important;color:#d9fffc!important;border-color:#69e2df77!important}
 
 .field-hint{margin:-5px 0 10px;color:var(--muted,#9c8bb0);font-size:10px;line-height:1.5}
+
+/* Clear, labelled homework completion controls */
+.complete-homework-btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;width:max-content;max-width:100%;margin-top:7px;padding:6px 10px;border:1px solid #a8c9b0;border-radius:7px;background:#eef7f0;color:#356b43;font-size:10px;font-weight:700;line-height:1.2;cursor:pointer;white-space:nowrap}.complete-homework-btn:hover{background:#dff0e3;border-color:#75a982}.complete-homework-btn.is-complete{background:#e1f1e5;border-color:#6fa77b;color:#28613a}.homework-row .row-main{display:flex;flex-direction:column;align-items:flex-start;gap:2px}.homework-row .complete-homework-btn{align-self:flex-start}
