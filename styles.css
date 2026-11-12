@@ -502,3 +502,39 @@ input,select,textarea,.settings-input{background:#160e25!important;color:#f1eaff
 .forest-orb:before,.forest-orb:after,#forestOrb:before,#forestOrb:after{border-color:#d1aaffaa!important}
 .live-dot{background:#bf91ff!important;box-shadow:0 0 8px #bf91ff!important}
 ::selection{background:#7544aa;color:white}
+
+/* v15 — force the purple theme in both app theme modes and remove all decorative bubble layers */
+html,body{background:#090614!important;color:#f1eaff!important}
+body,body:not(.dark){background:#090614!important;color:#f1eaff!important}
+body:not(.dark) .sidebar,body.dark .sidebar{background:rgba(13,8,25,.98)!important;border-color:#392451!important}
+body:not(.dark) .topbar,body.dark .topbar{background:rgba(14,9,25,.94)!important;border-color:#38244f!important}
+body:not(.dark) .panel,body:not(.dark) .stat-card,body:not(.dark) .project-card,body:not(.dark) .integration-card,
+body.dark .panel,body.dark .stat-card,body.dark .project-card,body.dark .integration-card{
+ background:rgba(20,13,34,.97)!important;border-color:#49305f!important;color:#f1eaff!important;box-shadow:0 10px 30px rgba(0,0,0,.28)!important
+}
+body:not(.dark) .ref-panel,body:not(.dark) .ref-stat,body.dark .ref-panel,body.dark .ref-stat{background:rgba(19,12,32,.97)!important;border-color:#573a72!important;color:#f1eaff!important}
+body:not(.dark) .ref-hero,body.dark .ref-hero{background:linear-gradient(110deg,#28183f,#160d29)!important;border-color:#8155b1!important;box-shadow:inset 0 0 28px #9a5fe52b,0 0 20px #8c50d21c!important}
+body:not(.dark) .nav-link,body.dark .nav-link{color:#c5b5d8!important}
+body:not(.dark) .nav-link.active,body.dark .nav-link.active{background:#28183e!important;color:#e5d4ff!important}
+body:not(.dark) .side-quote,body.dark .side-quote{background:#1b1230!important;border:1px solid #543773!important;color:#eee2ff!important}
+body:not(.dark) .side-quote p,body.dark .side-quote p{color:#eee2ff!important}
+body:not(.dark) .button,body.dark .button{background:#1b1230!important;color:#e8dcfa!important;border-color:#51366e!important}
+body:not(.dark) .button-primary,body.dark .button-primary{background:linear-gradient(135deg,#9256dc,#6b35b2)!important;color:#fff!important;border-color:#b18aff!important}
+body:not(.dark) input,body:not(.dark) select,body:not(.dark) textarea,body.dark input,body.dark select,body.dark textarea{background:#160e25!important;color:#f1eaff!important;border-color:#51366b!important}
+body:not(.dark) .timetable-grid,body:not(.dark) .calendar-grid,body:not(.dark) .table-panel,
+body.dark .timetable-grid,body.dark .calendar-grid,body.dark .table-panel{background:#120d20!important;border-color:#49305f!important}
+body:not(.dark) .timetable-block,body:not(.dark) .calendar-event,body.dark .timetable-block,body.dark .calendar-event{background:#35204f!important;color:#eadbff!important;border-color:#9165bd!important}
+body:not(.dark) .connection-intro,body.dark .connection-intro{background:linear-gradient(120deg,#2a1942,#160d28)!important;border-color:#8055aa!important}
+body:not(.dark) .connection-security,body.dark .connection-security{background:#21172e!important;border-color:#70508a!important}
+body:not(.dark) .connection-security strong,body:not(.dark) .connection-security p,body.dark .connection-security strong,body.dark .connection-security p{color:#e2d4f2!important}
+.brand-mark{background:#25133f url('evergreen-logo.svg') center/contain no-repeat!important;color:transparent!important;box-shadow:0 0 18px #a66aff35!important}
+.brand-light{color:#b9a7d1!important}
+.page-heading h1,.panel h3,.panel strong,.settings-section h3,.ref-panel .panel-heading h3{color:#f2eaff!important}
+.page-heading p,.panel p,.chart-note,.ref-panel .panel-heading p,.ref-panel .list-empty{color:#b6a7c7!important}
+.app-shell:before,.app-shell:after,body:before,body:after{content:none!important;display:none!important;background:none!important;animation:none!important}
+.ref-hero:before{background-image:none!important;opacity:0!important}
+.hero-card:after{color:rgba(190,145,255,.12)!important;text-shadow:none!important}
+.stat-card:after{display:none!important}
+.forest-orb,#forestOrb.forest-orb{border-color:#d9b8ff!important;background:radial-gradient(circle at 32% 24%,#fff 0 5%,#e4ccff 13%,#b47aff 28%,#6e36b2 53%,#28103f 76%)!important;box-shadow:0 0 0 7px #b47aff22,0 0 28px #b47affaa,0 0 58px #8039d566,inset 0 0 25px #fff8!important}
+.forest-orb .orb-core,#forestOrb .orb-core{background:radial-gradient(circle at 34% 27%,#fff 0 4%,#ead7ff 17%,#c18bff 42%,#8547c8 72%,#4a2078)!important;box-shadow:0 0 24px #d7b3ff,0 0 42px #a76aff88!important}
+.forest-orb:before,.forest-orb:after,#forestOrb:before,#forestOrb:after{border-color:#d1aaffaa!important}
