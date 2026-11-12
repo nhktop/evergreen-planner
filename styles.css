@@ -440,3 +440,65 @@ body{overflow-x:hidden}
  radial-gradient(circle at 91% 61%,rgba(208,255,229,.8) 0 1%,rgba(32,177,115,.6) 2%,transparent 3%),
  radial-gradient(circle at 57% 20%,rgba(201,255,224,.7) 0 1%,rgba(37,190,124,.5) 2%,transparent 3%)!important;
 }
+
+/* v14 — amethyst night theme; remove decorative glass bubbles entirely */
+:root{
+ --bg:#090614;--surface:#120d20;--surface-2:#1b1230;--text:#f1eaff;--muted:#a99bbd;
+ --line:#38244f;--green:#a879ff;--green-2:#281744;--green-3:#7044a7;
+ --shadow:0 12px 36px rgba(0,0,0,.32);
+}
+body{background:#090614!important;color:#f1eaff!important}
+.app-shell:before,.app-shell:after{display:none!important;content:none!important;background:none!important}
+.sidebar{background:rgba(13,8,25,.98)!important;border-right-color:#392451!important}
+.brand{color:#f2eaff!important}
+.brand-light{color:#b9a7d1!important}
+.brand-mark{background:linear-gradient(145deg,#392052,#211331)!important;color:#d8baff!important;box-shadow:0 0 18px #a66aff35!important}
+.workspace-label,.eyebrow{color:#b19acb!important}
+.nav-link{color:#b8a9c9!important}
+.nav-link span{color:#ad91d2!important}
+.nav-link:hover,.nav-link.active{background:#28183e!important;color:#e5d4ff!important}
+.nav-link.active span{color:#c79cff!important}
+.side-quote{background:#1b1230!important;border:1px solid #543773!important}
+.side-quote>span{color:#c59aff!important}.side-quote p{color:#eee2ff!important}.side-quote small{color:#b09fc4!important}
+.profile{border-color:#38244f!important}.profile strong{color:#f1eaff!important}.profile small{color:#ad9cbe!important}
+.avatar{background:#35204e!important;color:#e6d4ff!important}
+.main-area{background:transparent!important}
+.topbar{background:rgba(14,9,25,.88)!important;border-color:#38244f!important}
+.breadcrumb,.live-clock{color:#b5a5c7!important}.breadcrumb strong{color:#f0e7ff!important}
+.icon-button{color:#c2addb!important}.icon-button:hover{background:#28183e!important}
+.page-heading h1,.panel h3,.panel strong,.settings-section h3{color:#f2eaff!important}
+.page-heading p,.panel p,.chart-note{color:#b6a7c7!important}
+.button{background:#1b1230!important;color:#e8dcfa!important;border-color:#51366e!important}
+.button-primary{background:linear-gradient(135deg,#9256dc,#6b35b2)!important;color:#fff!important;border-color:#b18aff!important;box-shadow:0 0 18px #9859dc35!important}
+.button-primary:hover{background:#a56aeb!important}
+.panel,.stat-card,.integration-card,.modal,.settings-nav,.settings-section{background:rgba(20,13,34,.96)!important;border-color:#49305f!important;color:#f1eaff!important}
+.hero-card,.ref-hero{background:linear-gradient(110deg,#28183f,#160d29)!important;border-color:#8155b1!important;box-shadow:inset 0 0 28px #9a5fe52b,0 0 20px #8c50d21c!important}
+.hero-card h2,.ref-hero h2,.hero-date strong{color:#f0e4ff!important}
+.hero-card p,.hero-date span{color:#c1afd6!important}
+.stat-card .stat-value,.ref-stat .stat-value{color:#d0a8ff!important}
+.stat-card .stat-top,.ref-stat .stat-top{color:#c1afd6!important}
+.ref-panel,.ref-stat{background:rgba(19,12,32,.95)!important;border-color:#573a72!important}
+.ref-panel .panel-heading h3{color:#f0e6ff!important}
+.ref-panel .panel-heading p,.ref-panel .list-empty{color:#b5a5c8!important}
+.timetable-grid,.calendar-grid,.table-panel{background:#120d20!important;border-color:#49305f!important}
+.timetable-grid>div,.calendar-grid>div{border-color:#39264e!important;color:#d9c9ec!important}
+.timetable-block,.event-block,.calendar-event{background:#35204f!important;color:#eadbff!important;border-color:#9165bd!important}
+input,select,textarea,.settings-input{background:#160e25!important;color:#f1eaff!important;border-color:#51366b!important}
+.chip,.toggle{background:#251738!important;color:#dfd0f2!important;border-color:#61417d!important}
+.chip.active,.toggle.on{background:#7544aa!important;color:#fff!important}
+.badge-status,.status-local{background:#2c1b40!important;color:#e2caff!important;border-color:#76549a!important}
+.status-setup{background:#392b20!important;color:#ffe0ad!important;border-color:#8c673c!important}
+.connection-intro{background:linear-gradient(120deg,#2a1942,#160d28)!important;border-color:#8055aa!important}
+.connection-intro h2,.connection-intro p,.connection-note{color:#f0e5ff!important}
+.connection-security{background:#21172e!important;border-color:#70508a!important}
+.connection-security strong,.connection-security p{color:#e2d4f2!important}
+.learning-link-row{border-color:#49305f!important}
+.integration-logo,.google-mark,.outlook-mark,.apple-mark{background:#2c1b40!important;color:#d9baff!important}
+.forest-popover{background:rgba(18,11,31,.98)!important;border-color:#a879ff!important;color:#f2eaff!important;box-shadow:0 0 32px #9457d744!important}
+.forest-popover p,.forest-popover small{color:#c4b1da!important}
+.forest-shortcuts button{background:#28183e!important;color:#e9dcfb!important;border-color:#67458a!important}
+.forest-orb,#forestOrb.forest-orb{border-color:#d9b8ff!important;background:radial-gradient(circle at 32% 24%,#fff 0 5%,#e4ccff 13%,#b47aff 28%,#6e36b2 53%,#28103f 76%)!important;box-shadow:0 0 0 7px #b47aff22,0 0 28px #b47affaa,0 0 58px #8039d566,inset 0 0 25px #fff8!important}
+.forest-orb .orb-core,#forestOrb .orb-core{background:radial-gradient(circle at 34% 27%,#fff 0 4%,#ead7ff 17%,#c18bff 42%,#8547c8 72%,#4a2078)!important;box-shadow:0 0 24px #d7b3ff,0 0 42px #a76aff88!important}
+.forest-orb:before,.forest-orb:after,#forestOrb:before,#forestOrb:after{border-color:#d1aaffaa!important}
+.live-dot{background:#bf91ff!important;box-shadow:0 0 8px #bf91ff!important}
+::selection{background:#7544aa;color:white}
