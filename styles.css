@@ -165,3 +165,13 @@ body:not(.dark) .ref-panel .text-button{color:#277849}
 @media(max-width:900px){.ref-dashboard-grid{grid-template-columns:1fr 1fr}.ref-stat .stat-note{max-width:90px}}
 @media(max-width:650px){.ref-welcome{align-items:flex-start}.ref-dashboard-grid{grid-template-columns:1fr}.ref-hero{height:auto;min-height:105px}.ref-star{left:72%;font-size:56px}.ref-date{left:83%;display:none}.ref-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.ref-stat{height:72px}}
 @media(max-width:380px){.ref-hero-copy{max-width:72%}.ref-star{left:83%;font-size:44px}.ref-hero .quick-actions .button{font-size:6px;padding:4px 6px}}
+
+/* Keep the companion orb fixed above the interface, large and on the right */
+.forest-assistant{position:fixed!important;right:30px!important;bottom:28px!important;left:auto!important;top:auto!important;z-index:100!important;display:block!important;width:auto!important;height:auto!important;pointer-events:none}
+.forest-orb{position:relative!important;display:block!important;width:88px!important;height:88px!important;min-width:88px!important;min-height:88px!important;border-radius:50%!important;pointer-events:auto;box-shadow:0 0 0 8px rgba(72,255,177,.12),0 0 24px rgba(85,255,179,.75),0 0 52px rgba(43,245,157,.45),inset 0 0 23px rgba(223,255,255,.5)!important}
+.orb-core{inset:19px!important;box-shadow:0 0 24px #b4ffc0!important}
+.orb-spark{top:12px!important;right:15px!important;font-size:17px!important}
+.forest-orb:before,.forest-orb:after{inset:-10px!important}
+.forest-popover{position:absolute!important;right:0!important;bottom:108px!important;width:320px!important;max-width:calc(100vw - 34px)!important;pointer-events:auto}
+@media(max-width:900px){.forest-assistant{position:fixed!important;right:22px!important;bottom:22px!important;left:auto!important;top:auto!important}.forest-orb{width:82px!important;height:82px!important;min-width:82px!important;min-height:82px!important}.orb-core{inset:18px!important}.forest-popover{bottom:100px!important}}
+@media(max-width:560px){.forest-assistant{right:17px!important;bottom:17px!important}.forest-orb{width:76px!important;height:76px!important;min-width:76px!important;min-height:76px!important}.orb-core{inset:16px!important}.forest-popover{bottom:92px!important}}
