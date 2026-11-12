@@ -819,3 +819,6 @@ body .modal-backdrop>.focus-modal .timer-ring small{color:#c0a7df!important}
   body .modal-backdrop>.modal>header{top:-17px!important}
   body .modal-backdrop>.modal .field-pair{grid-template-columns:1fr!important;gap:0!important}
 }
+
+/* Clearly visible homework/task cancellation control */
+.cancel-item-btn{border:1px solid rgba(180,110,130,.55)!important;background:rgba(180,90,120,.12)!important;color:#d98ca8!important;border-radius:7px!important;padding:6px 9px!important;font-size:10px!important;font-weight:700!important;white-space:nowrap}.cancel-item-btn:hover{background:rgba(180,90,120,.24)!important;color:#ffd4e1!important}
