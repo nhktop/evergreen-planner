@@ -358,3 +358,39 @@ body{font-size:15px!important}
 .connections-fixed-link:hover,.connections-fixed-link:focus-visible{background:rgba(37,201,124,.35)!important;outline:2px solid #69f5a9!important;outline-offset:2px}
 .connections-fixed-link[aria-current="page"]{background:rgba(37,201,124,.42)!important}
 @media(max-width:900px){.sidebar{overflow-y:auto!important}.connections-fixed-link{min-height:48px!important}}
+
+/* v11 — make every sidebar destination visible and substantially enlarge the UI */
+.sidebar{width:260px!important;padding:26px 17px 18px!important;display:flex!important;flex-direction:column!important;overflow:hidden!important}
+.sidebar .brand{font-size:20px!important;padding:0 10px 34px!important}
+.sidebar .brand-mark{width:36px!important;height:36px!important;min-width:36px!important}
+.sidebar .workspace-label{font-size:11px!important;padding:0 13px 15px!important}
+.sidebar #navigation{display:flex!important;flex:1 1 auto!important;flex-direction:column!important;gap:5px!important;min-height:0!important;overflow-y:auto!important;overflow-x:hidden!important;padding:0 2px 16px!important;scrollbar-width:thin!important;scrollbar-color:rgba(102,255,177,.35) transparent!important}
+.sidebar #navigation .nav-link{display:flex!important;flex:0 0 auto!important;align-items:center!important;width:100%!important;min-height:49px!important;margin:0!important;padding:12px 13px!important;font-size:15px!important;line-height:1.25!important;gap:14px!important;white-space:nowrap!important;border-radius:11px!important}
+.sidebar #navigation .nav-link span{font-size:20px!important;width:23px!important;flex:0 0 23px!important}
+.sidebar #navigation .nav-link[data-page="connections"]{order:-1!important;margin:0 0 7px!important;min-height:54px!important;background:linear-gradient(100deg,rgba(31,196,119,.3),rgba(10,83,53,.42))!important;border:1px solid rgba(91,255,171,.55)!important;color:#caffdf!important;font-size:15px!important;font-weight:800!important;box-shadow:0 0 22px rgba(33,245,162,.17),inset 0 0 0 1px rgba(76,248,176,.08)!important}
+.sidebar #navigation .nav-link[data-page="connections"] span{color:#8dffc0!important}
+.sidebar .sidebar-bottom{flex:0 0 auto!important;margin-top:0!important;padding-top:12px!important}
+.sidebar .side-quote{padding:16px!important;margin-bottom:13px!important}
+.sidebar .side-quote p{font-size:13px!important}.sidebar .side-quote small{font-size:11px!important}
+.sidebar .sidebar-bottom>.nav-link{font-size:14px!important;min-height:46px!important}
+.sidebar .profile{padding-top:17px!important}.sidebar .profile strong{font-size:14px!important}.sidebar .profile small{font-size:11px!important}
+.main-area{margin-left:260px!important}
+.topbar{height:64px!important;padding:0 42px!important}
+.page-content{width:100%!important;max-width:2000px!important;padding:42px 48px 64px!important}
+.page-heading{margin-bottom:34px!important}.page-heading h1{font-size:32px!important}.page-heading p{font-size:15px!important}
+.eyebrow{font-size:11px!important}body{font-size:16px!important}
+.button{font-size:14px!important;padding:12px 18px!important;min-height:42px}
+.panel{padding:24px 26px!important;border-radius:15px!important}
+.panel-heading h3{font-size:17px!important}.panel-heading p{font-size:12px!important}
+.stat-card{padding:22px 23px!important;border-radius:15px!important}.stat-top{font-size:13px!important}.stat-value{font-size:31px!important}.stat-note{font-size:12px!important}
+.ref-welcome h1{font-size:27px!important}.ref-welcome p{font-size:14px!important}
+.ref-hero{min-height:150px!important;padding:25px 30px!important;border-radius:18px!important}.ref-hero h2{font-size:20px!important}.ref-hero p{font-size:13px!important}
+.ref-stat{height:116px!important;min-height:116px!important;padding:17px 19px!important}.ref-stat .stat-value{font-size:26px!important}.ref-stat .stat-note{font-size:11px!important}
+.ref-panel{min-height:135px!important;padding:19px 21px!important}.ref-panel .panel-heading h3{font-size:15px!important}.ref-panel .panel-heading p{font-size:10px!important}.ref-panel .row-main strong{font-size:13px!important}.ref-panel .row-main small,.ref-panel .due-label{font-size:11px!important}
+.timetable-grid{grid-template-columns:76px repeat(7,minmax(165px,1fr))!important;min-width:1230px!important}.timetable-grid>div{min-height:88px!important;padding:11px!important}.timetable-grid .week-label{font-size:12px!important}.timetable-grid .week-time{font-size:11px!important}.timetable-block{font-size:12px!important;min-height:54px!important;padding:10px!important}
+.connection-intro{padding:28px 30px!important}.connection-intro h2{font-size:22px!important}.connection-intro p{font-size:15px!important}.connection-note{font-size:12px!important}
+.connection-grid{gap:20px!important}.connection-card{min-height:270px!important;padding:26px!important}.connection-card h3{font-size:20px!important}.connection-card p{font-size:14px!important;line-height:1.75!important}.connection-card small{font-size:11px!important}
+.integration-logo{width:50px!important;height:50px!important;min-width:50px!important;font-size:23px!important}.badge-status{font-size:10px!important;padding:6px 10px!important}
+.connection-security{padding:21px 24px!important}.connection-security strong{font-size:14px!important}.connection-security p{font-size:13px!important}
+@media(max-width:1100px){.sidebar{width:240px!important}.main-area{margin-left:240px!important}.page-content{padding:30px 25px 45px!important}.timetable-grid{grid-template-columns:65px repeat(7,minmax(145px,1fr))!important;min-width:1080px!important}}
+@media(max-width:700px){.sidebar{width:270px!important;transform:translateX(-100%)}.sidebar.open{transform:translateX(0)}.main-area{margin-left:0!important}.topbar{height:60px!important;padding:0 16px!important}.page-content{padding:24px 16px 42px!important}.page-heading h1{font-size:26px!important}.connection-grid{grid-template-columns:1fr!important}.connection-card{min-height:0!important}}
