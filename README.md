@@ -6,7 +6,7 @@ Features include dashboard, tasks, homework, calendar day/week/month/year views,
 
 Planner data is stored in this browser on this device. It does not sync to the cloud or across devices. Export backups in Settings. Do not enter sensitive personal data.
 
-Outlook is shown as disconnected until a Microsoft Entra app registration, OAuth redirect, and secure token handling are configured. Sparx Maths and Educake are manual entry because no authorized official API is configured. This app does not scrape those sites or bypass their access controls.
+Google Calendar, Outlook, and Apple Calendar are listed in the Connections area but are not yet live integrations. Real calendar sync needs a secure backend for OAuth/CalDAV and token storage; do not place provider secrets or Apple credentials in static browser code. Sparx Maths and Educake are manual entry because no authorized official API is configured. This app does not scrape those sites or bypass their access controls.
 
 ## GitHub Pages
 
