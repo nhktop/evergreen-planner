@@ -341,3 +341,20 @@ body{font-size:15px!important}
  .page-heading h1{font-size:23px!important}
  .connection-card{min-height:0!important}
 }
+
+/* Dedicated always-visible Connections shortcut */
+.sidebar{display:flex!important;flex-direction:column!important;overflow-y:auto!important}
+#navigation{display:flex!important;flex-direction:column!important;flex:0 0 auto!important;gap:3px!important;overflow:visible!important}
+.connections-fixed-link{
+ display:flex!important;flex:0 0 auto!important;align-items:center!important;
+ width:100%!important;min-height:48px!important;margin:8px 0 12px!important;
+ padding:12px 13px!important;border-radius:10px!important;
+ color:#baffd5!important;font-size:14px!important;font-weight:800!important;
+ background:linear-gradient(105deg,rgba(29,177,107,.3),rgba(9,75,48,.55))!important;
+ border:1px solid rgba(91,255,171,.55)!important;
+ box-shadow:0 0 20px rgba(33,245,162,.17),inset 0 0 0 1px rgba(76,248,176,.1)!important;
+}
+.connections-fixed-link span{color:#8dffc0!important;font-size:19px!important;width:21px!important}
+.connections-fixed-link:hover,.connections-fixed-link:focus-visible{background:rgba(37,201,124,.35)!important;outline:2px solid #69f5a9!important;outline-offset:2px}
+.connections-fixed-link[aria-current="page"]{background:rgba(37,201,124,.42)!important}
+@media(max-width:900px){.sidebar{overflow-y:auto!important}.connections-fixed-link{min-height:48px!important}}
