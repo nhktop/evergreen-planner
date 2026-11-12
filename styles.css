@@ -593,3 +593,66 @@ body:not(.dark) .connection-security strong,body:not(.dark) .connection-security
  .week-grid,.timetable-grid{gap:3px!important}
  .week-grid>div,.timetable-grid>div{border-radius:8px!important;padding:6px!important}
 }
+
+/* v18 — explicit grid gutters and separate hourly cards, overriding legacy grid borders */
+body .main-area .page-content .week-grid,
+body .main-area .page-content .timetable-grid{
+ display:grid!important;
+ grid-auto-flow:row!important;
+ column-gap:5px!important;
+ row-gap:5px!important;
+ padding:5px!important;
+ border:0!important;
+ border-radius:0!important;
+ background:transparent!important;
+ overflow-x:auto!important;
+ overflow-y:visible!important;
+ align-items:stretch!important;
+}
+body .main-area .page-content .week-grid>div,
+body .main-area .page-content .timetable-grid>div{
+ box-sizing:border-box!important;
+ border:1px solid rgba(174,128,255,.32)!important;
+ border-radius:11px!important;
+ margin:0!important;
+ background:#171027!important;
+ box-shadow:0 3px 10px rgba(0,0,0,.18)!important;
+}
+body .main-area .page-content .week-grid>.hour-slot,
+body .main-area .page-content .timetable-grid>.hour-slot{
+ min-height:82px!important;
+ padding:9px!important;
+ background:linear-gradient(145deg,#211632 0%,#160e24 100%)!important;
+ border:1px solid rgba(180,137,255,.38)!important;
+ border-radius:12px!important;
+}
+body .main-area .page-content .week-grid>.week-time,
+body .main-area .page-content .timetable-grid>.week-time{
+ min-height:82px!important;
+ border:1px solid rgba(174,128,255,.2)!important;
+ border-radius:9px!important;
+ background:#120c1e!important;
+}
+body .main-area .page-content .week-grid>.week-label,
+body .main-area .page-content .timetable-grid>.week-label{
+ min-height:42px!important;
+ border:1px solid rgba(180,137,255,.42)!important;
+ border-radius:10px!important;
+ background:#2b1b41!important;
+}
+body .main-area .page-content .week-grid>.hour-slot:hover,
+body .main-area .page-content .timetable-grid>.hour-slot:hover{
+ border-color:#bd96ff!important;
+ background:linear-gradient(145deg,#302044,#201430)!important;
+ box-shadow:0 0 0 1px rgba(189,150,255,.12),0 5px 16px rgba(0,0,0,.24)!important;
+}
+body .main-area .page-content .week-grid .calendar-event,
+body .main-area .page-content .timetable-grid .timetable-block{
+ display:block!important;
+ margin:3px 0!important;
+ padding:8px!important;
+ border:1px solid rgba(195,157,255,.35)!important;
+ border-radius:8px!important;
+ background:#493064!important;
+ color:#f4eaff!important;
+}
