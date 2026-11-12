@@ -433,3 +433,10 @@ body{overflow-x:hidden}
  .ref-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important}
  .ref-hero{min-height:115px!important}
 }
+
+/* v13 — remove the decorative lower-left glass bubbles; keep the interactive companion orb */
+.app-shell:after{
+ background-image:
+ radial-gradient(circle at 91% 61%,rgba(208,255,229,.8) 0 1%,rgba(32,177,115,.6) 2%,transparent 3%),
+ radial-gradient(circle at 57% 20%,rgba(201,255,224,.7) 0 1%,rgba(37,190,124,.5) 2%,transparent 3%)!important;
+}
