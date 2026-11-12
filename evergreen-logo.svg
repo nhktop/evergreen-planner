@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+<defs><linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9ffe3"/><stop offset=".38" stop-color="#86d6a0"/><stop offset="1" stop-color="#236b49"/></linearGradient><linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#baf4c9"/><stop offset="1" stop-color="#347b54"/></linearGradient></defs>
+<path fill="url(#leaf)" d="M48 5c-5 0-5 12-12 20-7 8-17 11-15 19 1 5 7 7 13 5-9 7-22 15-21 26 1 10 12 14 25 9 5-2 9-1 8 5-1 4-5 8-10 11 12 0 19-7 22-16 3-8 11-10 19-8 9 2 17-2 17-9 0-8-12-13-19-19 8 0 13-5 11-11-2-7-13-12-19-19C60 10 56 5 48 5z"/>
+<path fill="url(#shade)" d="M49 8c-2 13-10 22-20 30-5 4-8 9-5 13 3 4 10 2 17-3-9 9-21 17-21 26 0 8 10 10 20 5 8-4 13-11 18-20-2 13-7 21-16 29 13-2 20-11 23-23 2-9 12-11 20-8 6 2 11 0 12-5 1-6-8-11-17-18-8-6-12-14-17-26-3 12-10 20-20 25 8-10 11-18 6-25z" opacity=".78"/>
+<path d="M25 58c13-10 31-12 42-24 7-8 8-14 7-19 10 10 6 22-4 31-11 10-29 14-41 24-8 7-9 14-6 21-13-7-11-23 2-33z" fill="#174e37" opacity=".62"/>
+<path d="M25 59c16-11 32-12 44-26" fill="none" stroke="#d5ffe0" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</svg>
