@@ -538,3 +538,12 @@ body:not(.dark) .connection-security strong,body:not(.dark) .connection-security
 .forest-orb,#forestOrb.forest-orb{border-color:#d9b8ff!important;background:radial-gradient(circle at 32% 24%,#fff 0 5%,#e4ccff 13%,#b47aff 28%,#6e36b2 53%,#28103f 76%)!important;box-shadow:0 0 0 7px #b47aff22,0 0 28px #b47affaa,0 0 58px #8039d566,inset 0 0 25px #fff8!important}
 .forest-orb .orb-core,#forestOrb .orb-core{background:radial-gradient(circle at 34% 27%,#fff 0 4%,#ead7ff 17%,#c18bff 42%,#8547c8 72%,#4a2078)!important;box-shadow:0 0 24px #d7b3ff,0 0 42px #a76aff88!important}
 .forest-orb:before,.forest-orb:after,#forestOrb:before,#forestOrb:after{border-color:#d1aaffaa!important}
+
+/* v16 — render the original Evergreen swirl mark as an actual image */
+.sidebar .brand{display:flex!important;align-items:center!important;gap:9px!important}
+.sidebar .brand .brand-mark{
+ display:block!important;flex:0 0 34px!important;width:34px!important;height:34px!important;
+ min-width:34px!important;max-width:34px!important;object-fit:contain!important;
+ background:transparent!important;border:0!important;border-radius:0!important;
+ box-shadow:none!important;padding:0!important;color:transparent!important;
+}
