@@ -1,0 +1,70 @@
+{
+  "name": "evergreen-planner",
+  "version": "1.0.0",
+  "description": "Evergreen Planner desktop app",
+  "main": "desktop/main.cjs",
+  "author": "NHK",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis portable",
+    "dist:mac": "electron-builder --mac dmg",
+    "dist:linux": "electron-builder --linux AppImage"
+  },
+  "devDependencies": {
+    "electron": "38.2.1",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "com.nhktop.evergreenplanner",
+    "productName": "Evergreen Planner",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "app.js",
+      "styles.css",
+      "evergreen-logo.svg",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Evergreen-Planner-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Evergreen Planner"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.productivity"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Office"
+    }
+  }
+}
