@@ -1,0 +1,58 @@
+name: Build Evergreen Planner desktop app
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            command: dist:win
+          - os: macos-latest
+            command: dist:mac
+          - os: ubuntu-latest
+            command: dist:linux
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Build desktop app
+        run: npm run ${{ matrix.command }}
+      - name: Upload installers
+        uses: actions/upload-artifact@v4
+        with:
+          name: evergreen-planner-${{ runner.os }}
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 30
+  publish-windows-release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Windows installer
+        uses: actions/download-artifact@v4
+        with:
+          name: evergreen-planner-Windows
+          path: release-files
+      - name: Publish latest desktop downloads
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: desktop-latest
+          name: Evergreen Planner - Latest Desktop App
+          body: Download the Windows installer or portable executable. macOS and Linux builds are available in workflow artifacts.
+          files: release-files/*
+          make_latest: true
+          overwrite_files: true
