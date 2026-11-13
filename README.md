@@ -1,15 +1,32 @@
 # Evergreen Planner
 
-Responsive school and productivity planner. Open `index.html` in a current browser; it has no build step or package installation.
+Evergreen Planner is a student productivity planner with a dashboard, tasks, homework, calendar, weekly timetable, projects, study-session suggestions, focus timer, statistics, theme settings, reminders, and JSON backup/restore.
 
-Features include dashboard, tasks, homework, calendar day/week/month/year views, weekly timetable, projects, study-session suggestions, focus timer, statistics, theme settings, reminders, and JSON backup/restore. Study suggestions use the configured study days and hours, session size, daily limit, homework deadline, and timed calendar events. The app reports when estimated minutes do not fit.
+## Download the desktop app
 
-Planner data is stored in this browser on this device. It does not sync to the cloud or across devices. Export backups in Settings. Do not enter sensitive personal data.
+Desktop packages are built for Windows, macOS, and Linux using Electron.
 
-Google Calendar, Outlook, and Apple Calendar are listed in the Connections area but are not yet live integrations. Real calendar sync needs a secure backend for OAuth/CalDAV and token storage; do not place provider secrets or Apple credentials in static browser code. Sparx Maths and Educake are manual entry because no authorized official API is configured. This app does not scrape those sites or bypass their access controls.
+- **Windows installer:** download the setup EXE from the [latest desktop release](https://github.com/nhktop/evergreen-planner/releases/tag/desktop-latest), then run it.
+- **Windows portable:** download the portable EXE from the same release; it can run without installation.
+- **macOS / Linux:** download the matching DMG or AppImage from the workflow artifacts.
+
+The GitHub Actions workflow rebuilds the desktop packages whenever changes are pushed to main. Windows installers are published to the latest desktop release. Build artifacts for all three platforms are available in the workflow run for 30 days.
+
+## Run from source
+
+Requires Node.js 22 or later.
+
+```bash
+npm install
+npm start
+```
+
+## Local data and integrations
+
+Planner data is stored in the app's local browser storage on this device. It does not currently sync to the cloud or across devices. Export backups in Settings. Do not enter sensitive personal data.
+
+Google Calendar, Outlook, and Apple Calendar are listed in Connections but are not yet live integrations. Real calendar sync needs a secure backend for OAuth/CalDAV and token storage; do not place provider secrets in desktop frontend code. Sparx Maths and Educake are manual entry because no authorized official API is configured. This app does not scrape those sites or bypass their access controls.
 
 ## GitHub Pages
 
-Upload the contents of this folder to the root of a repository. In repository Settings → Pages, choose **Deploy from a branch**, `main`, and `/(root)`. The site is static and needs no build step.
-
-Cloud accounts and multi-device persistence require a server-backed edition with Supabase Auth and Row Level Security. Never expose service keys or Microsoft secrets in browser code.
+The same files continue to power the browser version: https://nhktop.github.io/evergreen-planner/
